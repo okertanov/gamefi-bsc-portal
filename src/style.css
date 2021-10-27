@@ -1,0 +1,43 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+} 
+
+body {
+    background: url(assets/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+  }
+
+  .hero {
+    margin-top: 64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+    
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;*/
+  }
+
+  #virus-logo-id {
+    width: 272px;
+    position: fixed;
+    left: 300px;
+    top: 150px;
+  }
+
+  #vaccine-logo-id {
+    width: 272px;
+    position: fixed;
+    right: 300px;
+    bottom: 80px;
+  }
