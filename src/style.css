@@ -71,18 +71,32 @@ body {
   background-color: #f37209;
 }
 
+.logo-image {
+  width: 272px;
+  position: fixed;
+}
+
   #virus-logo-id {
-    width: 272px;
-    position: fixed;
     left: 350px;
     top: 220px;
   }
 
   #vaccine-logo-id {
-    width: 272px;
-    position: fixed;
     right: 380px;
     bottom: 80px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logo-image {
+      width: 128px;
+      position: relative !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      left: auto !important;
+      top: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+    }
   }
 
   .footer {
