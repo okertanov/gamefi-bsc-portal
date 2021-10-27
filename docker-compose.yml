@@ -11,4 +11,4 @@ services:
         target: production
         context: .
     ports:
-        - 8080:80
+        - 80:80
