@@ -20,3 +20,4 @@ Links
 [https://hackerlink.io/grant/REE/1](https://hackerlink.io/grant/REE/1)  
 [https://hidorahacks.medium.com/application-guide-bsc-gamefi-hackathon-russia-eastern-europe-dc173c9250e9](https://hidorahacks.medium.com/application-guide-bsc-gamefi-hackathon-russia-eastern-europe-dc173c9250e9)  
 
+
