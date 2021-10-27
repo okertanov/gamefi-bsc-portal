@@ -5,7 +5,7 @@ html, body {
 } 
 
 body {
-    background: url(assets/bg.jpg) no-repeat center center fixed;
+    background: url(assets/bg-blured.png) no-repeat center center fixed;
     background-size: cover;
     
   }
@@ -15,11 +15,12 @@ body {
     height: 100%;
   }
 
-  .hero {
-    margin-top: 64px;
+  .hero-text {
+    margin-top: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 32pt;
-    color: white;
+    font-weight: bold;
+    color: #f37209;
     text-align: center;
     
     /*display: flex;
@@ -28,16 +29,82 @@ body {
     height: 100%;*/
   }
 
+  .sub-hero-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    font-weight: bolder;
+    color: #f37209;
+    text-align: center;
+  }
+
+  .sub-hero-text > a {
+    color: inherit;
+  }
+
+  .sub-hero-text > a:hover {
+    color: #ff9c4b;
+  }
+
+#buttons-container {
+    margin-top: 32px;
+    margin-left: auto; 
+    margin-right: 32px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.hero-button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-demo {
+  background-color: #4CAF50;
+}
+
+.button-wallet {
+  background-color: #f37209;
+}
+
   #virus-logo-id {
     width: 272px;
     position: fixed;
-    left: 300px;
-    top: 150px;
+    left: 350px;
+    top: 220px;
   }
 
   #vaccine-logo-id {
     width: 272px;
     position: fixed;
-    right: 300px;
+    right: 380px;
     bottom: 80px;
+  }
+
+  .footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    position: fixed;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    color: darkgray;
+    text-align: center;
+  }
+
+  .game-stats-container {
+    position: absolute;
+    padding-top: 8px;
+    padding-left: 16px;
+  }
+
+  .game-stats {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: #ff9c4b;
+    margin-right: 32px;
   }

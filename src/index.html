@@ -1,18 +1,35 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <title>immoonita</title>
     </head>
     <body>
         <div class="container">
-            <div class="hero">
-                Immoonity – our first NFT game
+            <div class="game-stats-container">
+                <span class="game-stats"><i class="fa fa-user-astronaut"></i>&nbsp;Players: 1024</span>
+                <span class="game-stats"><i class="fa fa-coins"></i>&nbsp;VvV Tokens: 1,555,200</span>
+                <span class="game-stats"><i class="fa fa-virus"></i>&nbsp;NFT assets: 125</span>
+            </div>
+            <div id="buttons-container">
+                <button class="hero-button button-demo" onclick="alert('DEMO pressed');">DEMO</button>
+                &nbsp;&nbsp;&nbsp;
+                <button class="hero-button button-wallet" onclick="alert('Metamask pressed');">Connect Metamask to play</button>
+            </div>
+            <div class="hero-text">
+                Immoonita – our first NFT game
+            </div>
+            <div class="sub-hero-text">
+                You can play this game to earn <a href="#">tokens</a> by killing viruses.
             </div>
             <div class="virus-logo">
                 <img id="virus-logo-id" src="assets/virus.png">
             </div>
             <div class="vaccine-logo">
                 <img id="vaccine-logo-id" src="assets/vaccine.png">
+            </div>
+            <div class="footer">
+                Copyright &copy; 2021
             </div>
         </div>
     </body>
