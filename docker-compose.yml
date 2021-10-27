@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+
+  gamefi-bsc-portal:
+    image: gamefi-bsc-portal:latest
+    container_name: gamefi-bsc-portal
+    hostname: "gamefi-bsc-portal"
+    build:
+        dockerfile: Dockerfile
+        target: production
+        context: .
+    ports:
+        - 8080:80
