@@ -152,3 +152,9 @@ body {
     font-weight: 900;
     font-size: 18pt;
   }
+
+  .game-rules {
+    margin-top: 32px;
+    margin-left: 30%;
+    font-size: 14pt;
+  }
