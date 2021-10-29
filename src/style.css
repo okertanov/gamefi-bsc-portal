@@ -6,9 +6,16 @@ html, body {
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #f37209;
-    background: url(assets/bg-blured.png) no-repeat center center fixed;
+    color: #002ab6;
+    background: url(assets/bg_horizontal.png) no-repeat center center fixed;
     background-size: cover;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background: url(assets/bg_vertical.png) no-repeat center center fixed;
+      background-size: cover;
+    }
   }
 
   a {
@@ -16,7 +23,7 @@ body {
   }
 
   a:hover {
-    color: #ff9c4b;
+    color: #4b99ff;
   }
  
   .container {
@@ -117,13 +124,11 @@ body {
 
   .game-stats {
     font-size: 11pt;
-    color: #ff9c4b;
     margin-right: 16px;
   }
   
    .team-cards-container {
     font-size: 14pt;
-    color: #ff9c4b;
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
@@ -156,5 +161,7 @@ body {
   .game-rules {
     margin-top: 32px;
     margin-left: 30%;
+    margin-right: 30%;
     font-size: 14pt;
+    backdrop-filter: blur(20px);
   }
