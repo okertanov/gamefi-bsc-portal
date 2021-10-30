@@ -67,6 +67,10 @@ body {
   font-size: 16px;
 }
 
+.button-airdrop {
+  background-color: #ee5d31;
+}
+
 .button-demo {
   background-color: #4CAF50;
 }
@@ -171,6 +175,15 @@ body {
     margin-right: 2%;
     font-size: 14pt;
     /* backdrop-filter: blur(10px); */
+  }
+
+  .game-airdrop {
+    padding-top: 64px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 400px;
+    font-size: 14pt;
+    backdrop-filter: blur(10px);
   }
 
   #infographics-img {
