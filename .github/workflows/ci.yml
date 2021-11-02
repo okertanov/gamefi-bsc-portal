@@ -46,9 +46,10 @@ jobs:
 
       - name: Deploy
         run: |-
-          gcloud compute ssh ${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker ps"
-          gcloud compute ssh ${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker-compose.gcp.yml down"
-          gcloud compute ssh ${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker system prune -a -f"
-          gcloud compute ssh ${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker-compose.gcp.yml up -force-recreate -d"
-          gcloud compute ssh ${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker ps"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="id"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker ps"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker-compose.gcp.yml down"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker system prune -a -f"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker-compose -f docker-compose.gcp.yml up -force-recreate -d"
+          gcloud compute ssh {{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker ps"
 
