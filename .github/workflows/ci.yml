@@ -51,7 +51,7 @@ jobs:
           gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="mkdir -p ~/deployment/gh"
           gcloud compute scp ./docker-compose.gcp.yml ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }}:~/deployment/gh/ --zone=${{ secrets.GCP_ZONE }}
           gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="cd ~/deployment/gh && docker-compose -f docker-compose.gcp.yml down"
-          gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="cd ~/deployment/gh && docker-compose -f docker system prune -a -f"
+          gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="cd ~/deployment/gh && docker-compose -f docker-compose.gcp.yml rm -f"
           gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="cd ~/deployment/gh && docker-compose -f docker-compose.gcp.yml up -force-recreate -d"
           gcloud compute ssh ${{ secrets.GCP_USER }}@${{ secrets.GCP_INSTANCE }} --zone=${{ secrets.GCP_ZONE }} --command="docker ps"
 
