@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  gamefi-bsc-portal:
+    image: eu.gcr.io/immoonita/gamefi-bsc-portal:latest
+    container_name: gamefi-bsc-portal
+    hostname: "gamefi-bsc-portal"
+    ports:
+        - 8080:80
